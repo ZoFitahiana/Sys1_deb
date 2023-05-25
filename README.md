@@ -28,7 +28,8 @@ Ce script Ansible permet d'automatiser la configuration des Virtual Hosts d'Apac
  3- Modifiez le fichier `config.yml` avec les noms de domaine souhaités pour les Virtual Hosts. 
  4- Exécutez le script Ansible en utilisant la commande suivante : `$ansible-playbook playbook.yml`.                   Le script se chargera d'installer Apache (si nécessaire), de créer les dossiers pour les Virtual Hosts spécifiés et de modifier les fichiers de configuration d'Apache en conséquence.         
  5- Vérifiez les résultats pour vous assurer que les Virtual Hosts ont été configurés correctement.
-
+ 6-Attendez que le script s'exécute et configure les Virtual Hosts avec succès.
+ 7-Vérifiez la configuration d'Apache et redémarrez le service si nécessaire.
 <span style="color: white;">
 
 ## Personnalisation :
@@ -37,6 +38,5 @@ Ce script Ansible permet d'automatiser la configuration des Virtual Hosts d'Apac
 
 .Vous pouvez personnaliser les répertoires des Virtual Hosts en modifiant le chemin `directory` dans le fichier `config.yml`.
 .Si vous avez des configurations spécifiques pour chaque Virtual Host, vous pouvez ajouter les tâches nécessaires dans le fichier `playbook.yml`.
-
 
 
