@@ -1,0 +1,15 @@
+- name: Déploiement des Virtual Hosts
+  hosts: votre_groupe_de_serveurs
+  become: true
+  tasks:
+    - name: Installation d'Apache (si nécessaire)
+      apt:
+        name: apache2
+        state: present
+
+    # Les autres tâches du playbook...
+
+    - name: Redémarrage d'Apache pour appliquer les changements
+      service:
+        name: apache2
+        state: restarted
