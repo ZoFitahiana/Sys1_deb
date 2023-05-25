@@ -23,11 +23,11 @@ Ce script Ansible permet d'automatiser la configuration des Virtual Hosts d'Apac
 
 </span>
 
-### 1- Assurez-vous que vous avez les droits d'accès et les permissions appropriés pour exécuter des tâches administratives sur les machines cibles.
-### 2- Clonez ce dépôt Git sur la machine à partir de laquelle vous souhaitez exécuter le script.
-### 3- Modifiez le fichier `config.yml` avec les noms de domaine souhaités pour les Virtual Hosts. 
-### 4- Exécutez le script Ansible en utilisant la commande suivante : `$ansible-playbook playbook.yml`.                   Le script se chargera d'installer Apache (si nécessaire), de créer les dossiers pour les Virtual Hosts spécifiés et de modifier les fichiers de configuration d'Apache en conséquence.         
-### 5- Vérifiez les résultats pour vous assurer que les Virtual Hosts ont été configurés correctement.
+ 1- Assurez-vous que vous avez les droits d'accès et les permissions appropriés pour exécuter des tâches administratives sur les machines cibles.
+ 2- Clonez ce dépôt Git sur la machine à partir de laquelle vous souhaitez exécuter le script.
+ 3- Modifiez le fichier `config.yml` avec les noms de domaine souhaités pour les Virtual Hosts. 
+ 4- Exécutez le script Ansible en utilisant la commande suivante : `$ansible-playbook playbook.yml`.                   Le script se chargera d'installer Apache (si nécessaire), de créer les dossiers pour les Virtual Hosts spécifiés et de modifier les fichiers de configuration d'Apache en conséquence.         
+ 5- Vérifiez les résultats pour vous assurer que les Virtual Hosts ont été configurés correctement.
 
 <span style="color: white;">
 
@@ -35,8 +35,8 @@ Ce script Ansible permet d'automatiser la configuration des Virtual Hosts d'Apac
 
 </span>
 
-### .Vous pouvez personnaliser les répertoires des Virtual Hosts en modifiant le chemin `directory` dans le fichier `config.yml`.
-### .Si vous avez des configurations spécifiques pour chaque Virtual Host, vous pouvez ajouter les tâches nécessaires dans le fichier `playbook.yml`.
+.Vous pouvez personnaliser les répertoires des Virtual Hosts en modifiant le chemin `directory` dans le fichier `config.yml`.
+.Si vous avez des configurations spécifiques pour chaque Virtual Host, vous pouvez ajouter les tâches nécessaires dans le fichier `playbook.yml`.
 
 
 
