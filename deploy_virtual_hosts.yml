@@ -11,7 +11,7 @@
   with_items:
     - { directory: "/var/www/HEI" }
     - { directory: "/var/www/front" }
-    # Ajoutez d'autres Virtual Hosts si nécessaire
+   
 
 - name: Configuration des Virtual Hosts
   template:
@@ -20,14 +20,14 @@
   with_items:
     - { name: "HEI.school" }
     - { name: "front.example.com" }
-    # Ajoutez d'autres Virtual Hosts si nécessaire
+    
 
 - name: Activation des Virtual Hosts
   shell: a2ensite "{{ item.name }}"
   with_items:
     - { name: "HEI.school" }
     - { name: "front.example.com" }
-    # Ajoutez d'autres Virtual Hosts si nécessaire
+  
 
 - name: Redémarrage d'Apache pour appliquer les changements
   service:
