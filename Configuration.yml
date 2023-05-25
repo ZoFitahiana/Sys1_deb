@@ -1,0 +1,7 @@
+apache_installed: true
+virtual_hosts:
+  - name: HEI.school
+    directory: /var/www/HEI
+  - name: front.example.com
+    directory: /var/www/front
+  # Ajoutez d'autres Virtual Hosts si nécessaire
